@@ -1,0 +1,77 @@
+/* Basic navbar styling */
+/* Navbar styling */
+.navbar {
+    background: linear-gradient(90deg,#fefcfb, #1282a2, #001F54, #034078) !important; /* Bootstrap info color */
+}
+  
+  /* Navbar brand styling */
+  .custom-brand {
+    font-size: 5.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Navbar toggle button */
+  .custom-navbar .navbar-toggler-icon {
+    background-color: #fff; /* White toggle icon for better visibility */
+  }
+  
+  /* Navbar links */
+  .custom-nav-links {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+  
+  /* Styling the nav links */
+  .custom-nav-links .nav-link {
+    color: white !important; /* Ensure the text color is white */
+    padding: 10px 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  /* Hover effect for nav links */
+  .custom-nav-links .nav-link:hover {
+    color: #ffd700 !important; /* Change color on hover */
+  }
+  
+  /* Styling for the login/logout button */
+  .custom-logout-btn {
+    background: none;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  /* Hover effect for logout button */
+  .custom-logout-btn:hover {
+    color: #ffd700;
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 767px) {
+    .custom-navbar {
+      padding: 5px 0;
+    }
+  
+    .custom-nav-links {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .custom-nav-links .nav-link {
+      padding: 8px;
+      font-size: 1.2rem;
+    }
+  
+    .custom-navbar .navbar-toggler-icon {
+      background-color: #007bff;
+    }
+  }
+  

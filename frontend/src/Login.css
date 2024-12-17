@@ -1,0 +1,82 @@
+/* Apply a background image to the entire page */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url('https://pbs.twimg.com/media/FFLLgxZUUAUcZRY?format=jpg&name=medium');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Parent container to center the card */
+.login-form {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    height: calc(100vh - 56px); /* Full height minus navbar height */
+}
+
+/* Card styling */
+.card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background: linear-gradient(-70deg,#1282A2, #FEFCFB) !important; /* Bootstrap info color */
+    padding: 20px;
+    width: 100%; /* Full width of the column */
+    max-width: 400px; /* Set a maximum width for the card */
+}
+
+
+/* Card body styling */
+.login-card-body {
+    padding: 20px;
+}
+
+/* Center the welcome text */
+.login-form center {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #e9dddd;
+}
+
+/* Input fields */
+.form-control {
+    font-size: 0.9em;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+/* Login button */
+.btn {
+    background-color: #FEFCFB; /* Bootstrap success color */
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #1282A2;
+}
+
+/* Error message styling */
+p {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .login-form {
+        padding: 10px;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
